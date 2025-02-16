@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import get_connection
 from schemas import UserCreate
 import bcrypt   # Library for password hashing
-import jwt  # Library for JSON Web Token (JWT)
+from jose import jwt   # This is for python-jose  # Library for JSON Web Token (JWT)
 import datetime
 import os
 from dotenv import load_dotenv
